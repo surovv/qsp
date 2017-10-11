@@ -1,7 +1,7 @@
 {
   "name": "qsp",
-  "version": "0.1.0",
-  "description": "query string params",
+  "version": "0.2.0",
+  "description": "Parse and stringify URL query strings",
   "main": "dist/qsp.js",
   "scripts": {
     "build": "webpack -p"

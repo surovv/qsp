@@ -50,8 +50,6 @@ const convertNestedElementToQuery = elementToQuery(nestedTypesFunctions);
 const convertElementToQuery = elementToQuery(typesFunctions);
 
 
-export const convertToQuery = obj => flatten(Object.keys(obj).map(k => convertElementToQuery(k, obj[k], convertKeyValToQuery))).join('&');
+export const stringify = obj => flatten(Object.keys(obj).map(k => convertElementToQuery(k, obj[k], convertKeyValToQuery))).join('&');
 
-
-
-export const parseQuery = query => query.split('&').map(el => el.split('=')).reduce((obj, keyVal) => ({...obj, [keyVal[0]]: keyVal[1]}), {});
+export const parse = query => query.split('&').map(el => el.split('=')).reduce((obj, keyVal) => ({...obj, [keyVal[0]]: keyVal[1]}), {});
