@@ -1,8 +1,10 @@
 {
   "name": "qsp",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "query string params",
+  "main": "dist/qsp.js",
   "scripts": {
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
