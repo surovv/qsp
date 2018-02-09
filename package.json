@@ -1,6 +1,6 @@
 {
   "name": "qsp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Parse and stringify URL query strings",
   "main": "dist/qsp.js",
   "scripts": {

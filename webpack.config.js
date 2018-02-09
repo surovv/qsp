@@ -7,7 +7,6 @@ const joinToDirname = pth => path.join(__dirname, pth);
 
 module.exports = {
   cache: true,
-  devtool: 'eval',
 
   entry:  {
     qsp: joinToDirname('/src/qsp.js'),
